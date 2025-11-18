@@ -18,8 +18,17 @@ $(document).ready(function(){
 
     images.hide().eq(0).show()
     setInterval(function(){
-        images.eq(first).fadeOut(800)
+        images.eq(first).fadeOut(4000)
         first = (first + 1) % total
-        images.eq(first).fadeIn(800)
+        images.eq(first).fadeIn(4000)
+    })
+    
+    /*슬라이드 팝업*/
+    $('.popup').hide()
+    $('.bbs .tab ul.detail li a').on('click', function(){
+        $('.popup').show()
+    })
+    $('.popup .btn').on('click', function(){
+        $('.popup').hide()
     })
 })
