@@ -6,6 +6,9 @@
     box-sizing: border-box;
     color: #333;
 }
+body {
+    position: relative;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -117,6 +120,7 @@ header .gnb .depth2 ul > li > a:hover {
 }
 .bbs .news .tab ul {
     border: 1px solid #ccc;
+    height: 100%;
     padding: 10px;
 }
 .bbs .news .tab li.active button {
@@ -170,7 +174,7 @@ header .gnb .depth2 ul > li > a:hover {
     color: #7921a1;
 }
 
-.bbs .news .tab .galiery {
+.bbs .news .tab .active {
     height: 100%;
 }
 .bbs .news .tab .galiery button {
@@ -254,4 +258,41 @@ footer .group .foot_nav .depth1 li a {
 footer .group .copyright {
     display: flex;
     color: #fff;
+}
+
+.popup .popupwrap {
+    display: none;
+}
+.popup .popupwrap.active {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+.popup .popupwrap .btn {
+    display: none;
+}
+.popup .popupwrap.active .btn {
+    display: flex;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.popup .popupwrap h1 {
+    display: none;
+}
+.popup .popupwrap.active h1 {
+    display: flex;
+}
+.popup .popupwrap p {
+    display: none;
+}
+.popup .popupwrap.active p {
+    display: flex;
 }
