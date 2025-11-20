@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>예제연습</title>
+    <script src="scrpit/jquery-1.12.3.js"></script>
+    <script src="scrpit/main.js"></script>
+    <title>강원천문대</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1 class="logo"><a href="$"><img src="./images/logo.png" alt="로고"></a></h1>
+            <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
             <nav class="gnb">
                 <ul class="depth1">
                     <li>
@@ -76,9 +78,9 @@
         <div class="wrapper">
             <div class="news">
                 <ul class="tab">
-                    <li class="notice">
+                    <li class="notice active">
                         <button>공지사항</button>
-                        <ul class="active">
+                        <ul>
                             <li><a href="#"><span>하늘과 바람과 별과 詩 사생대회</span><strong>2020.11.19</strong></a></li>
                             <li><a href="#"><span>하계기간 야간 연장운영합니다.</span><strong>2020.11.19</strong></a></li>
                             <li><a href="#"><span>청소년 대상 천문교실 안내</span><strong>2020.11.19</strong></a></li>
@@ -109,6 +111,32 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"><img src="./images/footerLogo.png" alt="푸터로고"></a>
+            </div>
+            <div class="group">
+                <nav class="foot_nav">
+                    <ul class="depth1">
+                        <li><a href="#">하단메뉴1</a></li>
+                        <li><a href="#">하단메뉴2</a></li>
+                        <li><a href="#">하단메뉴3</a></li>
+                    </ul>
+                </nav>
+                <div class="copyright">카피라이트</div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup_wrap">
+            <h1>팝업메뉴입니다.</h1>
+            <p>팝업은 어렵게 만들지말고 쉽게 생각하자 항상 팝업은 떠있는형태임</p>
+            <div class="bt_wrap">
+                <button class="btn">닫기</button>
+            </div>
+        </div>
+        <div class="bg"></div>
+    </div>
 </body>
 </html>
