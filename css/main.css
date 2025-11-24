@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span, strong {
+    font-weight: inherit;
+}
+ul, li, ol {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    color: #333;
+}
+h1 {
+    font-size: inherit;
+}
+button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: inherit;
+}
+
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: #4A4948;  
+}
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+}
+header .logo a {
+    display: flex;
+}
+header .logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header .gnb .depth1 {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+}
+header .gnb .depth1 li {
+    height: 100%;
+}
+header .gnb .depth1 li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    width: 140px;
+    padding: 20px;
+}
+header .gnb .depth1 li a:hover {
+    background-color: #858585;
+}
+header .gnb .depth1 li .depth2 {
+    display: none;
+}
+header .gnb .depth1 li .depth2.active {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+}
+header .gnb .depth1 li .depth2.active li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    padding: 0 20px;
+}
+header .gnb .depth1 li .depth2.active li a:hover {
+    background-color: #e6ce81;
+}
+
+
+.imageslide .wrapper {
+    display: flex;
+    height: 300px;
+}
+.imageslide ul li {
+    position: absolute;
+}
+.imageslide ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.imageslide ul li a span {
+    position: absolute;
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e6ce81;
+}
+.imageslide ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news .wrapper {
+    display: flex;
+    height: 200px;
+    gap: 10px;
+}
+.news button {
+    width: 120px;
+    padding: 5px 0;
+    color: #fff;
+    background-color: #e6ce81;
+}
+.news .notice {
+    flex: 1;
+    height: 100%;
+}
+.news .notice .tab {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.news .notice .tab ul {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+.news .notice .tab ul li:nth-child(even) {
+    color: #ccc;
+    background-color: #e0e0e0;
+}
+.news .notice .tab ul li {
+    height: 100%;
+}
+.news .notice .tab ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.news .galiery {
+    flex: 1;
+}
+.news .galiery .tab {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.news .galiery .tab ul {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.news .galiery .tab ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.news .galiery .tab ul li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .galiery .tab ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.news .banner {
+    flex: 1;
+}
+.news .banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.news .banner a span {
+    position: absolute;
+    display: flex;
+    padding: 5px 40px;
+    color: #fff;
+    background-color: #e6ce81;
+}
+.news .banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    background-color: #4A4948;
+}
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+footer .foot_logo a {
+    display: flex;
+}
+footer .sns ul {
+    display: flex;
+    gap: 20px;
+}
+footer .sns ul li a {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+footer .sns ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
