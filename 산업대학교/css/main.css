@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+span, strong {
+    font-size: inherit;
+    font-weight: inherit;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    border: inherit;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+ul, li, ol {
+    list-style: none;
+}
+
+header .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #1b357a;
+}
+header .gnb {
+    height: 100%;
+    padding: 10px 0;
+}
+header .gnb ul {
+    display: flex;
+    height: 100%;
+}
+header .gnb ul li {
+    height: 100%;
+}
+header .gnb ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    font-weight: 700;
+    color: #fff;
+}
+header .gnb ul li a:hover {
+    background-color: #3d5caf;
+}
+header .gnb_sub {
+    display: none;
+}
+header .gnb_sub.active {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+header .gnb_sub.active .depth2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #333;
+}
+header .gnb_sub.active .depth2 li {
+    display: flex;
+    flex-direction: column;
+}
+header .gnb_sub.active .depth2 li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 200px;
+    color: #fff;
+}
+header .gnb_sub.active .depth2 li a:hover {
+    background-color: #444444;
+}
+
+
+.visual .wrapper {
+    height: 300px;
+}
+.visual ul li {
+    position: absolute;
+}
+.visual ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.visual ul li a span {
+    position: absolute;
+    padding: 20px;
+    background-color: #1b357a;
+    color: #fff;
+}
+.visual ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news .wrapper {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    height: 200px;
+}
+.news .tab > ul {
+    border: 1px solid #ddd;
+}
+.news .notice {
+    flex: 1;
+}
+.news .notice ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.news .notice ul li {
+    height: 100%;
+}
+.news .notice ul li:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.news .notice ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5px;
+    height: 100%;
+    font-size: 14px;
+}
+
+.news .galiery {
+    flex: 1;
+}
+.news .galiery ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.news .galiery ul > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.news .galiery ul li {
+    width: 100%;
+    height: 100%;
+}
+.news .galiery ul li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.news .galiery ul li a img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+.news .banner {
+    flex: 1;
+}
+.news .banner a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news button {
+    width: 120px;
+    padding: 10px;
+    color: #fff;
+    background-color: #1b357a;
+}
+
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+}
+footer .group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+footer .group .foot_nav ul {
+    display: flex;
+    justify-content: space-between;
+}
