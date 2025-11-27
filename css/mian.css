@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+span, strong {
+    font-weight: inherit;
+}
+ul, li, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    font-weight: inherit;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: none;
+}
+
+.visual .wrapper ul {
+    display: flex;
+    overflow: hidden;
+}
