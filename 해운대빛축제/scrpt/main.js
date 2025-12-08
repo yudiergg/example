@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('header .gnb .depth1 li').on('mouseenter',function(){
-        $(this).children('header .gnb .depth1 .depth2').addClass('active')
+        $(this).children('.depth2').addClass('active')
     })
     $('header .gnb .depth1 li').on('mouseleave',function(){
-        $(this).children('header .gnb .depth1 .depth2').removeClass('active')
+        $(this).children('.depth2').removeClass('active')
     })
     // setInterval(function(){
     //     $('.contaier .visual ul li a').delay(2000).animate({'marginLeft': '-800'},1000)
