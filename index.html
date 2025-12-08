@@ -3,77 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="scrpt/jquery-1.12.3.js"></script>
     <script src="scrpt/main.js"></script>
-    <title>슬라이드연습</title>
+    <title>해운대빛축제</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="로고">
+                </a>
+            </h1>
             <nav class="gnb">
                 <ul class="depth1">
                     <li>
-                        <a href="#">탑</a>
+                        <a href="#">이용안내</a>
+                        <ul class="depth2">
+                            <li><a href="#">이용방법</a></li>
+                            <li><a href="#">이용시간</a></li>
+                            <li><a href="#">이용요금</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">아우터</a>
+                        <a href="#">이벤트정보</a>
+                        <ul class="depth2">
+                            <li><a href="#">현장이벤트</a></li>
+                            <li><a href="#">온라인이벤트</a></li>
+                            <li><a href="#">이벤트예약</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">팬츠/스커트</a>
-                    </li>               
+                        <a href="#">프로그램</a>
+                        <ul class="depth2">
+                            <li><a href="#">프로그램안내</a></li>
+                            <li><a href="#">온라인예약</a></li>
+                            <li><a href="#">단체예약상담</a></li>
+                        </ul>
+                    </li>
                     <li>
-                        <a href="#">악세서리</a>
-                    </li>         
+                        <a href="#">고객센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <nav class="lnb">
-                <ul class="depth2">
-                    <li><a href="#">블라우스</a></li>
-                    <li><a href="#">티</a></li>
-                    <li><a href="#">셔츠</a></li>
-                    <li><a href="#">니트</a></li>
-                </ul>
-                <ul class="depth2">
-                    <li><a href="#">자켓</a></li>
-                    <li><a href="#">점퍼</a></li>
-                    <li><a href="#">코트</a></li>
-                </ul>
-                <ul class="depth2">
-                    <li><a href="#">긴바지</a></li>
-                    <li><a href="#">짧은바지</a></li>
-                    <li><a href="#">스커트</a></li>
-                    <li><a href="#">데님</a></li>
-                </ul>
-                <ul class="depth2">
-                    <li><a href="#">귀고리</a></li>
-                    <li><a href="#">목걸이</a></li>
-                    <li><a href="#">반지</a></li>
-                    <li><a href="#">팔찌</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
+        </div>
+    </header>
+    <div class="contaier">
         <div class="visual">
             <div class="wrapper">
                 <ul>
-                    <li><a href="#"><img src="./images/img1.jpg" alt="배너1"></a></li>
-                    <li><a href="#"><img src="./images/img2.jpg" alt="배너2"></a></li>
-                    <li><a href="#"><img src="./images/img3.jpg" alt="배너3"></a></li>
+                    <li>
+                        <a href="#">
+                            <span>해운대빛축제1</span>
+                            <img src="./images/img1.jpg" alt="슬라이드_1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>해운대빛축제2</span>
+                            <img src="./images/img2.jpg" alt="슬라이드_2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>해운대빛축제3</span>
+                            <img src="./images/img3.jpg" alt="슬라이드_3">
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>  
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="news">
+                    <ul class="tab">
+                        <li class="notice active">
+                            <button>공지사항</button>
+                            <div class="detail">
+                                <ul>
+                                    <li><a href="#"><span>해변에서 펼쳐지는 노래공연</span><strong>2020.11.09</strong></a></li>
+                                    <li><a href="#"><span>바다의 야경과 빛공연 관람하기</span><strong>2020.11.09</strong></a></li>
+                                    <li><a href="#"><span>불꽃놀이 이벤트를 신청하세요</span><strong>2020.11.09</strong></a></li>
+                                    <li><a href="#"><span>빛축제 단체관람 안내</span><strong>2020.11.09</strong></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="galiery">
+                            <button>갤러리</button>
+                            <div class="detail">
+                                <ul>
+                                    <li><a href="#"><img src="./images/icon1.jpg" alt="아이콘_1"></a></li>
+                                    <li><a href="#"><img src="./images/icon2.jpg" alt="아이콘_2"></a></li>
+                                    <li><a href="#"><img src="./images/icon3.jpg" alt="아이콘_3"></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <a href="#">
+                        <span>배너</span>
+                        <img src="./images/banner.jpg" alt="배너">
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#">
+                        <span>바로가기</span>
+                        <img src="./images/direct.jpg" alt="바로가기">
+                    </a>
+                </div>
+            </div>
+        </div>
         <footer>
-            <div class="logo"><a href="#"><img src="./images/footerLogo.png" alt="푸터로고"></a></div>
-            <div class="copylight">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</div>
-            <div class="sns">
-                <ul class="sns_group">
-                    <li><a href="#"><img src="./images/sns1.jpg" alt="페이스북"></a></li>
-                    <li><a href="#"><img src="./images/sns2.jpg" alt="페이스북"></a></li>
-                    <li><a href="#"><img src="./images/sns3.jpg" alt="인스타그램"></a></li>
-                </ul>
-            </div>
+            <div class="wrapper">
+                <div class="foot_logo">
+                    <a href="#">
+                        <img src="./images/footerLogo.png" alt="하단로고">
+                    </a>
+                </div>
+                <div class="group">
+                    <ul class="depth1">
+                        <li><a href="#">하단메뉴 1</a></li>
+                        <li><a href="#">하단메뉴 1</a></li>
+                        <li><a href="#">하단메뉴 1</a></li>
+                    </ul>
+                    <div class="copyright">카피라이트</div>
+                </div>
+            </div >
         </footer>
+    </div>
 </body>
 </html>

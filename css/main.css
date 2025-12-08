@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #333;
+}
+body {
+    width: 1000px;
+    display: flex;
+}
+span, strong {
+    font-weight: inherit;
+}
+a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+ul, li, ol {
+    list-style: none;
+}
+h1 {
+    font-size: inherit;
+}
+button {
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+    height: 650px;
+}
+header .logo a {
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+header .logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header .gnb {
+    height: 100%;
+    background-color: #868686;
+}
+header .gnb .depth1 li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333;
+}
+
+/*서브메뉴*/
+header .gnb .depth1 .depth2 {
+    display: none;
+}
+header .gnb .depth1 .depth2.active {
+    display: flex;
+    flex-direction: column;
+}
+header .gnb .depth1 .depth2.active li a {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #868686;
+}
+/**/
+
+.contaier {
+    width: 800px;
+}
+.contaier .visual .wrapper {
+    height: 350px;
+    overflow: hidden;
+}
+.contaier .visual ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1050px;
+}
+/* .contaier .visual ul li {
+    position: absolute;
+} */
+ .contaier .visual ul li {
+    height: 350px;
+ }
+.contaier .visual ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+.contaier .visual ul li a span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ebc033;
+}
+.contaier .visual ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*컨텐츠 공용*/
+.content .news {
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+    height: 100%;
+}
+.content .wrapper {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    gap: 10px;
+    padding: 10px 0;
+}
+.content .news span, strong {
+    font-size: 14px;
+    color: #96009b;
+}
+.content .news li.active button {
+    width: 120px;
+    padding: 4px;
+    border: 1px solid #ebc033;
+    color: #fff;
+    background-color: #ebc033;
+}
+.content .news button {
+    width: 120px;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+.content .news .tab {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+/* .content .news .tab li {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} */
+.content .news .tab li .detail {
+    border: 1px solid #ccc;
+    height: 100%;
+}
+/*공지사항*/
+.content .news .tab .notice .detail {
+    display: none;
+}
+.content .news .tab .notice.active {
+    display: flex;
+    flex-direction: column;
+}
+.content .news .tab .notice.active .detail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+.content .news .tab .notice.active .detail ul li:nth-child(odd) {
+    background-color: #868686;
+}
+.content .news .tab .notice.active .detail ul li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+.content .news .tab .notice.active .detail ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+/*갤러리*/
+.content .news .tab .galiery button {
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+.content .news .tab .galiery .detail {
+    display: none;
+}
+.content .news .tab .galiery.active {
+    height: 100%;
+}
+.content .news .tab .galiery.active .detail {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.content .news .tab .galiery.active .detail ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.content .news .tab .galiery.active .detail ul li a {
+    display: flex;
+    width: 100%;
+    height: 110px;
+}
+.content .news .tab .galiery.active .detail ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*배너*/
+.content .banner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.content .banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content .banner a span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.6);
+}
+/*링크*/
+.content .link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.content .link a span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.6);
+}
+.content .link a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*푸터*/
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #868686;
+}
+footer .foot_logo a {
+    display: flex;
+    width: 200px;
+    height: 100px;   
+}
+footer .foot_logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+footer .group {
+    display: flex;
+    flex-direction: column;
+}
+footer .group ul {
+    display: flex;
+    gap: 40px;
+}
+footer .group ul li a {
+    display: flex;
+    width: 120px;
+}
