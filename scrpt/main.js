@@ -16,10 +16,17 @@ $(document).ready(function(){
     // $('header .gnb .main li').on('mouseleave', function(){
     //     $(this).children('.sub').stop().slideUp()
     // })
-    $('header .gnb .main li').on('mouseenter', function(){
-        $(this).find('.sub').show()
+    // $('header .gnb .main li').on('mouseenter', function(){
+    //     $(this).find('.sub').show(200)
+    // })
+    // $('header .gnb .main li').on('mouseleave', function(){
+    //     $(this).find('.sub').hide(200)
+    // })
+
+    $('header .gnb .main li a').on('mouseenter', function(){
+        $(this).siblings('.sub').stop().slideDown()
     })
-    $('header .gnb .main li').on('mouseleave', function(){
-        $(this).find('.sub').hide()
+    $('header .gnb .main li a').on('mouseleave', function(){
+        $(this).siblings('.sub').stop().slideUp()
     })
 })

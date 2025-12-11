@@ -67,7 +67,6 @@ header .gnb .main li .sub {
     display: none;
     position: absolute;
     z-index: 1;
-    flex-direction: column;
     top: 0;
     left: 200px;
     width: 180px;
