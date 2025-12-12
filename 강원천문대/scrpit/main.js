@@ -29,4 +29,11 @@ $(document).ready(function(){
     $('.btn').on('click', function(){
         $('.popup').removeClass('active')
     })
+
+    $('.news .notice .tab .detail li a').on('mouseenter click',function(){
+        $('.modal').addClass('active')
+    })
+    $('.modal.active .modal_wrap .btn_close').on('mouseenter click',function(){
+        $('.modal').removeClassClass('active')
+    })
 })
