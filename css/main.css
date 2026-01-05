@@ -120,7 +120,7 @@ header .user ul .login a::after {
     background-color: #ccc;
 }
 /********************************************************/
-
+/*비주얼*************************************************/
 .group {
     display: flex;
     flex-direction: column;
@@ -167,6 +167,7 @@ header .user ul .login a::after {
 .content .visual .direct li a:hover {
     background-color: #6d6d6d;
 }
+/*링크*********************************/
 .link a {
     display: flex;
     width: 100%;
@@ -180,7 +181,8 @@ header .user ul .login a::after {
     height: 100%;
     object-fit: cover;
 }
-/*공용*/
+/**************************************/
+/*공용*******************************/
 .news {
     display: flex;
     padding: 10px;
@@ -188,8 +190,15 @@ header .user ul .login a::after {
 }
 .news .tab {
     position: relative;
-    display: flex;
     width: 100%;
+
+}
+.news .tab button.active {
+    width: 120px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6d6d6d;
 }
 .news .tab button {
     width: 120px;
@@ -197,8 +206,7 @@ header .user ul .login a::after {
     font-size: 18px;
     font-weight: 700;
 }
-
-/*공용*/
+/*************************************/
 .news .tab li .detail {
     border: 1px solid #ccc;
 }
@@ -233,32 +241,11 @@ header .user ul .login a::after {
     width: 100%;
     height: 100%;
 }
-.news .tab .gallery button {
-    position: absolute;
-    top: 0;
-    left: 120px;
-}
-.news .tab .gallery.active {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.news .tab .gallery.active .detail {
-    width: 100%;
-    height: 100%;
-}
-.news .tab .gallery.active .detail li a {
-    display: flex;
-    width: 40px;
-    height: 40px;
-}
-.news .tab .gallery.active .detail li a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
+
+
+/*푸터****************************************/
 footer {
     display: flex;
     align-items: center;
@@ -301,3 +288,4 @@ footer .sns ul li a img {
     height: 100%;
     object-fit: cover;
 }
+/*******************************************/
