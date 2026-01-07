@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*클리어 css**********************************************/
 * {
     margin: 0;
@@ -13,7 +14,7 @@ h1 {
     font-weight: inherit;
 }
 ul, li, ol {
-    list-style: none;
+    list-style: none; 
 }
 a {
     text-decoration: none;
@@ -40,8 +41,18 @@ body {
 
 /*헤더***************************************************/
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
+}
+header:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #199D79;
 }
 header .logo a {
     display: flex;
@@ -120,16 +131,16 @@ header .user ul .login a::after {
     background-color: #ccc;
 }
 /********************************************************/
+
 /*비주얼*************************************************/
-.group {
+/* .group {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 200px);
-}
+} */
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 200px);
     height: 100%;
 }
 .content .visual {
@@ -167,6 +178,8 @@ header .user ul .login a::after {
 .content .visual .direct li a:hover {
     background-color: #6d6d6d;
 }
+/**************************************/
+
 /*링크*********************************/
 .link a {
     display: flex;
@@ -182,70 +195,103 @@ header .user ul .login a::after {
     object-fit: cover;
 }
 /**************************************/
-/*공용*******************************/
-.news {
+
+/*************** 탭메뉴***********************/
+.tab {
     display: flex;
+    flex-direction: column;
     padding: 10px;
+    width: 100%;
     height: 250px;
 }
-.news .tab {
+.tab .button_wrap {
+    display: flex;
+}
+.tab .button_wrap ul {   
+    display: flex;
+    gap: 4px;
+}
+.tab .button_wrap ul li button {
     position: relative;
-    width: 100%;
-
-}
-.news .tab button.active {
-    width: 120px;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #6d6d6d;
-}
-.news .tab button {
-    width: 120px;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: 700;
-}
-/*************************************/
-.news .tab li .detail {
+    display: flex;
+    padding: 10px 40px;
+    background-color: #ccc;
     border: 1px solid #ccc;
 }
-.news .tab .notice {
+.tab .button_wrap ul li.active button {
+    color: #199D79;
+    font-weight: 700;
+    background-color: #fff;
+}
+.tab .button_wrap ul li.active button:after {
+    position: absolute;
+    content: "";
+    display: flex;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+/**************************************/
+
+/*************** 탭패널***********************/
+.tab .tabpanels {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.tab .tabpanels .tab_panel .detail {
     display: none;
 }
-.news .tab .notice {
+.tab .tabpanels .notice .detail.active {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: space-between;
+    border: 1px solid #ccc;
     height: 100%;
 }
-.news .tab .notice .detail {
+.tab .tabpanels .notice .detail.active li a {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.news .tab .notice .detail li {
-    display: flex;
-    width: 100%;
-    height: 100%;
+    justify-content: space-between;
     border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
-.news .tab .notice .detail li:last-child {
+.tab .tabpanels .notice .detail.active li a:hover {
+    background-color: #ccc;
+}
+.tab .tabpanels .notice .detail.active li:last-child a {
     border-bottom: 0px;
 }
-.news .tab .notice .detail li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+.tab .tabpanels .gallery {
     width: 100%;
     height: 100%;
 }
+.tab .tabpanels .gallery .detail.active {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+}
+.tab .tabpanels .gallery .detail.active li {
+    width: 100%;
+    height: 100%;
+}
+.tab .tabpanels .gallery .detail.active li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.tab .tabpanels .gallery .detail.active li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/**************************************/
 
-
-
-
-/*푸터****************************************/
+/*푸터*******************************************/
 footer {
     display: flex;
     align-items: center;
@@ -288,4 +334,4 @@ footer .sns ul li a img {
     height: 100%;
     object-fit: cover;
 }
-/*******************************************/
+/*****************************************************/
