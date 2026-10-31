@@ -69,7 +69,7 @@ header nav ul li a {
     color: #fff;
 }
 header .gnb {
-    display: none;
+    display: flex;
     position: absolute;
     top: 100px;
     right: 0;
@@ -104,6 +104,9 @@ header .gnb ul li a:hover {
 .visual ul {
     display: flex;
 }
+.visual ul li {
+    display: flex;
+}
 .visual ul li a {
     display: flex;
     width: 100%;
@@ -121,13 +124,15 @@ header .gnb ul li a:hover {
     flex: 1;
     height: 100%;
 }
-.news .notice.active { 
+.news .tab .notice { 
     display: flex;
     flex-direction: column;
     flex: 1;
     height: 100%;
 }
-.news .notice button {
+.news .tab .notice button {
+    z-index: 10;
+    position: relative;
     display: flex;
     max-width: fit-content;
     padding: 10px 20px;
@@ -136,34 +141,37 @@ header .gnb ul li a:hover {
     color: blueviolet;
     background-color: #fff;
 }
-.news .notice.active ul {
+.news .tab .notice ul {
+    display: none;
+}
+.news .tab .notice ul.active {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 10px;
-    border: 1px solid #cacaca;
+    border: 1px solid hsl(0, 0%, 79%);
 }
-.news .notice.active ul li {
+.news .tab .notice ul.active li {
     height: 100%;
 }
-.news .notice.active ul li:last-child {
+.news .tab .notice ul.active li:last-child {
     border-bottom: 1px solid #cacaca;
 }
-.news .notice.active ul li a {
+.news .tab .notice ul.active li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
     padding: 4px;
 }
-.news .galiery {
+.news .tab .galiery {
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
 }
-.news .galiery button {
+.news .tab .galiery button {
     position: relative;
     left: 96px;
     display: flex;
@@ -174,24 +182,28 @@ header .gnb ul li a:hover {
     color: blueviolet;
     background-color: #e4e4e4;
 }
-.news .galiery {
+.news .tab .galiery {
     height: 100%;
 }
-.news .galiery ul {
+.news .tab .galiery ul {
     display: none;
+}
+.news .tab .galiery ul.active {
+    display: flex;
     width: 100%;
     height: 100%;
     gap: 20px;
     border: 1px solid #cacaca;
-}.news .galiery ul li {
+}
+.news .tab .galiery ul.active li {
     height: 100%;
 }
-.news .galiery ul li a {
+.news .tab .galiery ul.active li a {
     display: flex;
     padding: 10px;
     height: 100%;
 }
-.news .galiery ul li a img {
+.news .tab .galiery ul.active li a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
