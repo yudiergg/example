@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은고딕";
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+button {
+    font-weight: inherit;
+    background-color: inherit;
+    color: inherit;
+    border: inherit;
+    cursor: pointer;
+}
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    gap: 200px;
+    height: 100px;
+    background-color: blue;
+}
+header .logo a {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 200px;
+    height: 100%;
+}
+header .logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header nav {
+    width: 100%;
+}
+header nav .dpeth1 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+header nav .dpeth1 li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header nav .dpeth1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+header nav .dpeth1 li .depth2 {
+    display: none;
+}
+header nav .dpeth1 li .depth2.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+}
+header nav .dpeth1 li .depth2.active a {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+header nav .dpeth1 li .depth2.active a:hover {
+    background-color: #aeaeae;
+}
+.visual {
+    display: flex;
+    height: 300px;
+}
+.visual ul {
+    display: flex;
+}
+.visual ul li a {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+}
+.visual ul li a img {
+    width: 100%;
+    object-fit: contain;
+}
+.news {
+    display: flex;
+    padding: 10px 0;
+    height: 200px;
+}
+.news .tab {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.news .tab .notcie button {
+    max-width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid #bababa;
+    font-weight: 700;
+}
+.news .tab .notcie ul {
+    display: none;
+}
+.news .tab .notcie.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.news .tab .notcie.active ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bababa;
+}
+.news .tab .notcie.active ul li {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .tab .notcie.active ul li:nth-last-child(odd){
+    background-color: #b44f91;
+}
+.news .tab .notcie.active ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+}   
+.news .tab .notcie.active ul li a span,strong {
+    color: #b44f91;
+}
+.news .tab .notcie.active ul li:nth-last-child(odd) a span,strong {
+    color: #fff;
+}
+.news .tab .gallery button {
+    position: absolute;
+    top: 0;
+    left: 77.34px;
+    padding: 5px 10px;
+    border: 1px solid #bababa;
+    border-left: 0;
+    font-weight: 700;
+    background-color: #aeaeae;
+}
+.news .tab .gallery ul {
+    display: none;
+}
+.news .tab .gallery.active {
+    display: flex;
+    height: 100%;
+}
+.news .tab .gallery.active ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aeaeae;
+    padding: 10px;
+}
+.news .tab .gallery.active ul li {
+    display: flex;
+    gap: 20px;
+}
+.news .tab .gallery.active ul a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .tab .gallery.active ul a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.news .banner {
+    flex: 1;
+}
+.news .banner a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news .link {
+    flex: 1;
+}
+.news .link a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.news .link a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
